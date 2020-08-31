@@ -1,91 +1,105 @@
 @font-face {
-    font-family: "Exo2.0-Thin";
-    src: url(./components/fonts/Exo2.0-Thin.otf);
-   }
+  font-family: "Exo2.0-Thin";
+  src: url(./components/fonts/Exo2.0-Thin.otf);
+}
+
 @font-face {
-    font-family: "trebuchet-ms";
-    src: url(./components/fonts/trebuchet-ms.ttf);
-   }
+  font-family: "trebuchet-ms";
+  src: url(./components/fonts/trebuchet-ms.ttf);
+}
+
 * {
-	font-family: "trebuchet-ms";
+  font-family: "trebuchet-ms";
 }
+
 ul {
-	padding: 0;
-	margin: 0;
+  padding: 0;
+  margin: 0;
 }
+
 li {
-	list-style-type: none;
+  list-style-type: none;
 }
+
 html {
-	height: 100%;
+  height: 100%;
 }
+
 body {
-	height: 100%;
+  height: 100%;
 }
+
 a {
-	text-decoration: none;
-    border-bottom: 1px dashed rgba(22, 152, 217, 1);
-	color: rgba(22, 152, 217, 1);
-	&:hover {
-		color: rgba(46, 168, 230, 1);
-		border-bottom: 1px dashed rgba(46, 168, 230, 1);
-	}
+  text-decoration: none;
+  border-bottom: 1px dashed rgba(22, 152, 217, 1);
+  color: rgba(22, 152, 217, 1);
+
+  &:hover {
+    color: rgba(46, 168, 230, 1);
+    border-bottom: 1px dashed rgba(46, 168, 230, 1);
+  }
 }
+
 .bold {
-	font-weight: bold;
+  font-weight: bold;
 }
+
 #root {
-	height: 100%;
+  height: 100%;
 }
+
 .wrapper {
-	height: 100%;
+  height: 100%;
 
   .title {
-  	padding-top: 37px;
-  	padding-bottom: 25px;
-  	text-align: center;
-  	font-family: "Exo2.0-Thin";
-  	font-size: 36px;
-  	color: white;
+    padding-top: 37px;
+    padding-bottom: 25px;
+    text-align: center;
+    font-family: "Exo2.0-Thin";
+    font-size: 36px;
+    color: white;
   }
+
   .content {
-  	display: flex;
-  	justify-content: center;
-  	flex-wrap: wrap;
-  	position: absolute;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     align-items: center;
 
   }
+
   .content__block {
-  	box-sizing: border-box;
-  	height: 480px;
-  	margin: 0 40px 0 40px;
+    box-sizing: border-box;
+    height: 480px;
+    margin: 0 40px 0 40px;
   }
 }
+
 .background {
-	background: url(components/img/background.png);
-	position: fixed;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-	z-index: -1;
-	box-shadow:
-	inset 0px 200px 37px rgba(0, 0, 0, 0.35),
-	inset 0px -200px 37px rgba(0, 0, 0, 0.4);
-	;
+  background: url(components/img/background.png);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  box-shadow: inset 0px 200px 37px rgba(0, 0, 0, 0.35),
+  inset 0px -200px 37px rgba(0, 0, 0, 0.4);;
 }
+
 @media (max-width: 1200px) {
-	.wrapper {
-		.content {
-			position: relative;
-		}
-		.content__block {
-			margin-bottom: 60px;
-		}
-	}
+  .wrapper {
+    .content {
+      position: relative;
+    }
+
+    .content__block {
+      margin-bottom: 60px;
+    }
+  }
 }
